@@ -1,0 +1,342 @@
+/*calle 40 ·441 x23 fracc los pinos edif, blanco entre deporti  y macroplaza
+cv impre 
+jueves  9.30 am
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+} 
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+} 
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+} 
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.productos h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav a:hover {
+    color: #09c4ea;
+    text-decoration: underline;
+}
+
+.productos li:hover {
+    border-color: #09c4ea;
+
+}
+
+.productos li:active {
+    border-color: #10cc29;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color: #BBBBBB;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+/*productos*/
+.form {
+    width: 60%;
+    margin: auto;
+    
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+/* funciona para mas etiquetas pasar estilos - form input, form textarea*/
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+textarea, select {
+    width: 56%;
+}
+
+select {
+    width: 20%;
+}
+
+.checkbox {
+    margin:  20px 0;
+}
+
+.enviar {
+    width: 60%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+table {
+    margin: 80px 20%;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* Aqui empieza el css para nuetra home */
+
+.banner { 
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.items:before{
+    content:"★"
+}
+
+/*Modo responsivo-web-app* index*/
+@media screen and (max-width:480px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales {
+        width: 100%;
+    }
+}
+
+/*Modo responsivo-web-app* productos*/
+@media screen and (max-width:480px) {
+        
+    .productos {
+        width: auto;
+    }
+
+    .productos li {
+        width: 100%;
+    }
+
+    .productos img {
+        width: 100%;
+    }
+
+}
+
+/*Modo responsivo-web-app* contacto*/
+@media screen and (max-width:480px) {
+    form {
+        width: 86%;
+    }
+    
+    form > label {
+        margin: 5px;
+    }
+    /* funciona para mas etiquetas pasar estilos - form input, form textarea*/
+    .input-padron{
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .enviar {
+        width: 100%;
+    }
+
+    table {
+        width: 80%;
+    }
+    
+    
+}
